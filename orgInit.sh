@@ -2,7 +2,7 @@
 sfdx shane:object:create --label="Loan" --plural="Loans" --api=Loan__c --type=custom --nametype=AutoNumber - --autonumberformat="Loan-{0000000000}"
 #Add fields
 sfdx shane:object:field -o  Loan__c -a Amount__c -n "Loan Amount" -t Number  --precision=15 --scale=2
-sfdx shane:object:field -o  Loan__c -a Broker_Status__c -n "Broker Status" -t Picklist  --picklistvalues="Approved,Deactivated,Watch List" --picklistdefaultfirst
+sfdx shane:object:field -o  Loan__c -a Broker_Status__c -n "Broker Status" -t Picklist  --picklistvalues="Approved,Deactivated,Watch List" 
 sfdx shane:object:field -o  Loan__c -a Broker_Tier__c -n "Broker Tier" -t Picklist  --picklistvalues="Key Account,Non Key Account" --picklistdefaultfirst
 sfdx shane:object:field -o  Loan__c -a Client_Risk_Rating__c -n "Client Risk Rating" -t Number  --precision=15 --scale=0
 sfdx shane:object:field -o  Loan__c -a Credit_Score__c -n "Credit Score" -t Number  --precision=15 --scale=0
