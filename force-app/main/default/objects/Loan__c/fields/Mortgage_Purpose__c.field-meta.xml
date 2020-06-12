@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField>
+    <label>Mortgage Purpose</label>
+    <type>Picklist</type>
+    <fullName>Mortgage_Purpose__c</fullName>
+    <valueSet>
+        <valueSetDefinition>
+            <value>
+                <fullName>Equity Takeout</fullName>
+                <label>Equity Takeout</label>
+                <default>true</default>
+            </value>
+            <value>
+                <fullName>Purchase</fullName>
+                <label>Purchase</label>
+                <default>false</default>
+            </value>
+            <value>
+                <fullName>Purchase Rent to Own</fullName>
+                <label>Purchase Rent to Own</label>
+                <default>false</default>
+            </value>
+            <value>
+                <fullName>Refinance</fullName>
+                <label>Refinance</label>
+                <default>false</default>
+            </value>
+            <value>
+                <fullName>Refinance for Debt Consolidation</fullName>
+                <label>Refinance for Debt Consolidation</label>
+                <default>false</default>
+            </value>
+            <sorted>true</sorted>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

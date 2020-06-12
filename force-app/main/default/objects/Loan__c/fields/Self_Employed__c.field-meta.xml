@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField>
+    <label>Self-Employed?</label>
+    <type>Checkbox</type>
+    <fullName>Self_Employed__c</fullName>
+    <defaultValue>false</defaultValue>
+</CustomField>

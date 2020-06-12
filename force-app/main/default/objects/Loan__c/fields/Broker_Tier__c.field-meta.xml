@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField>
+    <label>Broker Tier</label>
+    <type>Picklist</type>
+    <fullName>Broker_Tier__c</fullName>
+    <valueSet>
+        <valueSetDefinition>
+            <value>
+                <fullName>Key Account</fullName>
+                <label>Key Account</label>
+                <default>true</default>
+            </value>
+            <value>
+                <fullName>Non Key Account</fullName>
+                <label>Non Key Account</label>
+                <default>false</default>
+            </value>
+            <sorted>true</sorted>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

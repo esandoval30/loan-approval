@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField>
+    <label>Current Term (in Months)</label>
+    <type>Number</type>
+    <fullName>Current_Term_In_Months__c</fullName>
+    <scale>0</scale>
+    <precision>15</precision>
+</CustomField>

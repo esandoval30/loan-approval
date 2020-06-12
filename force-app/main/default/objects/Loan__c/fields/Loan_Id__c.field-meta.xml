@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField>
+    <label>Loan Id</label>
+    <type>Text</type>
+    <fullName>Loan_Id__c</fullName>
+    <length>40</length>
+    <required>true</required>
+    <unique>true</unique>
+    <externalId>true</externalId>
+</CustomField>

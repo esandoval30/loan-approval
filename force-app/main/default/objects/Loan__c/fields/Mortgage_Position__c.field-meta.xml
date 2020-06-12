@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField>
+    <label>Mortgage Position</label>
+    <type>Picklist</type>
+    <fullName>Mortgage_Position__c</fullName>
+    <valueSet>
+        <valueSetDefinition>
+            <value>
+                <fullName>1</fullName>
+                <label>1</label>
+                <default>true</default>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <label>2</label>
+                <default>false</default>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <label>3</label>
+                <default>false</default>
+            </value>
+            <sorted>true</sorted>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

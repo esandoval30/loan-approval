@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField>
+    <label>Property Type</label>
+    <type>Picklist</type>
+    <fullName>Property_Type__c</fullName>
+    <valueSet>
+        <valueSetDefinition>
+            <value>
+                <fullName>Apartment High Rise</fullName>
+                <label>Apartment High Rise</label>
+                <default>true</default>
+            </value>
+            <value>
+                <fullName>Apartment Low Rise</fullName>
+                <label>Apartment Low Rise</label>
+                <default>false</default>
+            </value>
+            <value>
+                <fullName>Row</fullName>
+                <label>Row</label>
+                <default>false</default>
+            </value>
+            <value>
+                <fullName>Semi-detached</fullName>
+                <label>Semi-detached</label>
+                <default>false</default>
+            </value>
+            <value>
+                <fullName>Single</fullName>
+                <label>Single</label>
+                <default>false</default>
+            </value>
+            <sorted>true</sorted>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

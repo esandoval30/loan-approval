@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField>
+    <label>Credit Score</label>
+    <type>Number</type>
+    <fullName>Credit_Score__c</fullName>
+    <scale>0</scale>
+    <precision>15</precision>
+</CustomField>

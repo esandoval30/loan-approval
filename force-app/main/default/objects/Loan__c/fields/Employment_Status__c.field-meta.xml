@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField>
+    <label>Employment Status</label>
+    <type>Picklist</type>
+    <fullName>Employment_Status__c</fullName>
+    <valueSet>
+        <valueSetDefinition>
+            <value>
+                <fullName>Commissions</fullName>
+                <label>Commissions</label>
+                <default>true</default>
+            </value>
+            <value>
+                <fullName>Contract</fullName>
+                <label>Contract</label>
+                <default>false</default>
+            </value>
+            <value>
+                <fullName>Hourly</fullName>
+                <label>Hourly</label>
+                <default>false</default>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <label>Other</label>
+                <default>false</default>
+            </value>
+            <value>
+                <fullName>Pension</fullName>
+                <label>Pension</label>
+                <default>false</default>
+            </value>
+            <value>
+                <fullName>Salary</fullName>
+                <label>Salary</label>
+                <default>false</default>
+            </value>
+            <value>
+                <fullName>Self-employed</fullName>
+                <label>Self-employed</label>
+                <default>false</default>
+            </value>
+            <sorted>true</sorted>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

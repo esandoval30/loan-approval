@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField>
+    <label>Broker Status</label>
+    <type>Picklist</type>
+    <fullName>Broker_Status__c</fullName>
+    <valueSet>
+        <valueSetDefinition>
+            <value>
+                <fullName>Approved</fullName>
+                <label>Approved</label>
+                <default>true</default>
+            </value>
+            <value>
+                <fullName>Deactivated</fullName>
+                <label>Deactivated</label>
+                <default>false</default>
+            </value>
+            <value>
+                <fullName>Watch List</fullName>
+                <label>Watch List</label>
+                <default>false</default>
+            </value>
+            <sorted>true</sorted>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField>
+    <label>Stage</label>
+    <type>Picklist</type>
+    <fullName>Stage__c</fullName>
+    <valueSet>
+        <valueSetDefinition>
+            <value>
+                <fullName>Declined</fullName>
+                <label>Declined</label>
+                <default>true</default>
+            </value>
+            <value>
+                <fullName>Approved</fullName>
+                <label>Approved</label>
+                <default>false</default>
+            </value>
+            <value>
+                <fullName>Application</fullName>
+                <label>Application</label>
+                <default>false</default>
+            </value>
+            <value>
+                <fullName>Commit</fullName>
+                <label>Commit</label>
+                <default>false</default>
+            </value>
+            <sorted>true</sorted>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
