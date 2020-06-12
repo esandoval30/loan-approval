@@ -28,7 +28,7 @@ sfdx shane:object:tab -o Loan__c -i 17
 #Add PermissionSet
 sfdx shane:permset:create -n LoanAdmin -o Loan__c -t
 #Ok, we're ready to deploy all of this stuff
-#sfdx force:org:create -f config/project-scratch-def.json -d 1 -s -w 3
+sfdx force:org:create -f config/project-scratch-def.json -d 1 -s -w 3
 #push source code into scratch org
 sfdx force:source:push
 #create user
