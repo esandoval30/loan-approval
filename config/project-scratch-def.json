@@ -1,5 +1,28 @@
 {
-  "orgName": "esandoval company",
+  "orgName": "A Financial Institution Lending *",
   "edition": "Developer",
-  "features": []
+  "description": "Predict Loan Approvals with  Scoring with Einstein Prediction Builder",
+  "features": ["EinsteinAnalyticsPlus","EinsteinBuilder","AnalyticsAdminPerms"],
+  "settings": {
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
+    },
+    "mobileSettings": {
+      "enableS1EncryptedStoragePref2": false
+    },
+    "securitySettings": {
+      "enableAuditFieldsInactiveOwner":true,
+      "passwordPolicies": {
+        "enableSetPasswordInApi": true
+      }
+    },
+    "analyticsSettings": {
+      "enableInsights": true,
+      "enableWaveRecordNavigation":true,
+      "enableWaveReplication":true,
+      "enableWaveTemplate":true
+    }
+    
+  }
 }
+
