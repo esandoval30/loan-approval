@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CustomField>
-    <label>Total Debt/Servicing ratio</label>
-    <type>Number</type>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Total_Debt_Servicing_Ratio__c</fullName>
-    <scale>2</scale>
+    <externalId>false</externalId>
+    <label>Total Debt/Servicing ratio</label>
     <precision>15</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
 </CustomField>

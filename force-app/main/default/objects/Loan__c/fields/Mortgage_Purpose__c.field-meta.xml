@@ -1,36 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CustomField>
-    <label>Mortgage Purpose</label>
-    <type>Picklist</type>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Mortgage_Purpose__c</fullName>
+    <externalId>false</externalId>
+    <label>Mortgage Purpose</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
     <valueSet>
         <valueSetDefinition>
+            <sorted>false</sorted>
             <value>
                 <fullName>Equity Takeout</fullName>
-                <label>Equity Takeout</label>
                 <default>true</default>
+                <label>Equity Takeout</label>
             </value>
             <value>
                 <fullName>Purchase</fullName>
-                <label>Purchase</label>
                 <default>false</default>
+                <label>Purchase</label>
             </value>
             <value>
                 <fullName>Purchase Rent to Own</fullName>
-                <label>Purchase Rent to Own</label>
                 <default>false</default>
+                <label>Purchase Rent to Own</label>
             </value>
             <value>
                 <fullName>Refinance</fullName>
-                <label>Refinance</label>
                 <default>false</default>
+                <label>Refinance</label>
             </value>
             <value>
                 <fullName>Refinance for Debt Consolidation</fullName>
-                <label>Refinance for Debt Consolidation</label>
                 <default>false</default>
+                <label>Refinance for Debt Consolidation</label>
             </value>
-            <sorted>true</sorted>
         </valueSetDefinition>
     </valueSet>
 </CustomField>

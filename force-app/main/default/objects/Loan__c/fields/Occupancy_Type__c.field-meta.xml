@@ -1,26 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CustomField>
-    <label>Occupancy Type</label>
-    <type>Picklist</type>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Occupancy_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Occupancy Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
     <valueSet>
         <valueSetDefinition>
+            <sorted>false</sorted>
             <value>
                 <fullName>Owner</fullName>
-                <label>Owner</label>
                 <default>true</default>
-            </value>
-            <value>
-                <fullName>Rent To Own</fullName>
-                <label>Rent To Own</label>
-                <default>false</default>
+                <label>Owner</label>
             </value>
             <value>
                 <fullName>Rental</fullName>
-                <label>Rental</label>
                 <default>false</default>
+                <label>Rental</label>
             </value>
-            <sorted>true</sorted>
+            <value>
+                <fullName>Rent To Own</fullName>
+                <default>false</default>
+                <label>Rent To Own</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>

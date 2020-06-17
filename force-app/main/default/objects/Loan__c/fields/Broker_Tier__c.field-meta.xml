@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CustomField>
-    <label>Broker Tier</label>
-    <type>Picklist</type>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Broker_Tier__c</fullName>
+    <externalId>false</externalId>
+    <label>Broker Tier</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
     <valueSet>
         <valueSetDefinition>
+            <sorted>false</sorted>
             <value>
                 <fullName>Key Account</fullName>
-                <label>Key Account</label>
                 <default>true</default>
+                <label>Key Account</label>
             </value>
             <value>
                 <fullName>Non Key Account</fullName>
-                <label>Non Key Account</label>
                 <default>false</default>
+                <label>Non Key Account</label>
             </value>
-            <sorted>true</sorted>
         </valueSetDefinition>
     </valueSet>
 </CustomField>

@@ -3,8 +3,9 @@ sfdx force:source:push
 sfdx force:user:password:generate
 #assign permset to user
 sfdx force:user:permset:assign --permsetname LoanAdmin
-#Bulk Load data
-sfdx force:data:bulk:upsert -s Loan__c -f data/loans.csv -i Loan_Id__c
+#Load Opportunity and Recommendation data
+sfdx force:data:bulk:upsert -s Loan__c -f data/loans.csv -i Loan_Id__c -w 3
+sfdx force:apex:execute -f data/recommendations.cls
 #Install EPB Model Accuracy Package
 #sfdx force:package:install -p 04t4J000002ASSJ
 #Open org

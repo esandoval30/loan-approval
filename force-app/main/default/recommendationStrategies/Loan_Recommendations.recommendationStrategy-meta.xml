@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecommendationStrategy xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contextRecordType>Loan__c</contextRecordType>
+    <if>
+        <childNode>Home_Improvement_Recommendations</childNode>
+        <childNode>Load_Product_Recommendations</childNode>
+        <label>Is Product Fit for Customer?</label>
+        <name>High_Loan_To_Value</name>
+        <childNodeExpression>
+            <childName>Load_Product_Recommendations</childName>
+            <expression>$Record.Loan_To_Value__c &lt;= 70 &amp;&amp; ISPICKVAL($Record.Stage__c, &#39;Application&#39;)</expression>
+        </childNodeExpression>
+        <childNodeExpression>
+            <childName>Home_Improvement_Recommendations</childName>
+            <expression>$Record.Loan_To_Value__c &gt; 70 &amp;&amp; $Record.Credit_Score__c &lt;= 500 &amp;&amp; ISPICKVAL($Record.Stage__c, &#39;Application&#39;)</expression>
+        </childNodeExpression>
+        <onlyFirstMatch>false</onlyFirstMatch>
+    </if>
+    <if>
+        <childNode>Improve_Credit_Score_Recommendations</childNode>
+        <label>Credit Score &lt;= 800?</label>
+        <name>Low_Credit_Score</name>
+        <childNodeExpression>
+            <childName>Improve_Credit_Score_Recommendations</childName>
+            <expression>$Record.Credit_Score__c &lt; 800</expression>
+        </childNodeExpression>
+        <onlyFirstMatch>false</onlyFirstMatch>
+    </if>
+    <label>Loan Recommendations</label>
+    <recommendationLoad>
+        <label>Home Improvement Loans</label>
+        <name>Home_Improvement_Recommendations</name>
+        <condition>
+            <field>Name</field>
+            <operator>CONTAINS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>Home Improvement</value>
+            </value>
+        </condition>
+        <conditionLogic>and</conditionLogic>
+        <object>Recommendation</object>
+    </recommendationLoad>
+    <recommendationLoad>
+        <label>Lower Rate Products</label>
+        <name>Load_Product_Recommendations</name>
+        <condition>
+            <field>Name</field>
+            <operator>CONTAINS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>Lower Rate Product</value>
+            </value>
+        </condition>
+        <conditionLogic>and</conditionLogic>
+        <object>Recommendation</object>
+    </recommendationLoad>
+    <recommendationLoad>
+        <label>Credit Score Recommendations</label>
+        <name>Improve_Credit_Score_Recommendations</name>
+        <condition>
+            <field>Category__c</field>
+            <operator>EQUALS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>Credit Score</value>
+            </value>
+        </condition>
+        <conditionLogic>and</conditionLogic>
+        <object>Recommendation</object>
+    </recommendationLoad>
+    <union>
+        <childNode>High_Loan_To_Value</childNode>
+        <childNode>Low_Credit_Score</childNode>
+        <label>Output</label>
+        <name>Output_1586f7bbe8af4da3886d5821c305f699</name>
+    </union>
+</RecommendationStrategy>
