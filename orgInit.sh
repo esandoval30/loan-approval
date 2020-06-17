@@ -1,4 +1,4 @@
-sfdx force:org:create -f config/project-scratch-def.json -d 7 -s -w 3
+sfdx force:org:create -f config/project-scratch-def.json -d 14 -s -w 3
 sfdx force:source:push
 sfdx force:user:password:generate
 #assign permset to user
