@@ -1,3 +1,9 @@
 **/jsconfig.json
 
 **/.eslintrc.json
+
+**.appMenu
+
+sfdcInternalInt__sfdc_aiplatform.permissionset
+
+*.customfield
