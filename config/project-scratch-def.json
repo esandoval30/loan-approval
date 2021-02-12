@@ -1,7 +1,6 @@
 {
   "orgName": "A Lending Institution...",
-  "edition": "Developer",
-  "release": "Previous",
+  "edition": "Developer"
   "description": "Predict Loan Approvals with  Scoring with Einstein Prediction Builder",
   "features": ["EinsteinAnalyticsPlus","EinsteinBuilder","AnalyticsAdminPerms","EinsteinBuilderFree"],
   "settings": {
