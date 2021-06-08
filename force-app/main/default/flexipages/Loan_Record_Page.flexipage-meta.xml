@@ -8,6 +8,10 @@
                     <value>false</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
+                    <name>enableActionsConfiguration</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
                     <name>hideChatterActions</name>
                     <value>false</value>
                 </componentInstanceProperties>
@@ -120,7 +124,11 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>maxDisplayPropositions</name>
-                    <value>4</value>
+                    <value>3</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>recommendationSource</name>
+                    <value>strategyBuilder</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>shouldLaunchActionOnReject</name>
@@ -140,7 +148,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>showTitle</name>
-                    <value>true</value>
+                    <value>false</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>strategyName</name>
@@ -148,7 +156,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>widgetTitle</name>
-                    <value>Einstein Recommends</value>
+                    <value>Recommended Actions</value>
                 </componentInstanceProperties>
                 <componentName>runtime_communities_nba:builderNbaWidget</componentName>
             </componentInstance>
